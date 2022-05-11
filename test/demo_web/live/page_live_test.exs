@@ -16,12 +16,12 @@ defmodule DemoWeb.PageLiveTest do
       assert index_live
              |> element("#p1-link a", "page-1")
              |> render_click() =~
-               "/page</p>"
+               "<p>Current URL: http://localhost:4002/page</p>"
 
       assert index_live
              |> element("#p2-link a", "page-2")
              |> render_click() =~
-               "/page2</p>"
+               "<p>Current URL: http://localhost:4002/page2</p>"
     end
   end
 end
