@@ -18,6 +18,7 @@ defmodule DemoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/page", PageLive.Index, :index
   end
 
   # Other scopes may use custom stacks.
